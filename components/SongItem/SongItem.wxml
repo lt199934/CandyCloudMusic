@@ -1,0 +1,12 @@
+<view class="recently-item" bindtap="playmusic">
+        <view class="item-title">
+                {{name}}
+        </view>
+        <view class="subhead">
+                <view class="sq">SQ</view>
+                <view class="sub-name">{{msg}}</view>
+        </view>
+
+        <view class="icon-more iconfont icon-diandiandianshu"></view>
+        <view class="icon-play iconfont icon-24gf-playCircle"></view>
+</view>

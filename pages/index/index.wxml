@@ -1,0 +1,136 @@
+<view class="all-view">
+    <view class="search">
+        <view class="iconfont icon-gengduocaidan search-more"></view>
+        <view bindtap="searchPage">
+            <view class="search-icon iconfont icon-sousuo"></view>
+            <input type="text" value="{{searchValue}}" disabled="disabled" placeholder="小苹果 最近很火哦"/>
+        </view>
+        <!-- 扫码 -->
+        <view bindtap="scanCode" class="iconfont icon-saoma search-speak" style="font-size: 45rpx;"></view>
+    </view>
+    <view class="first-piece">
+        <!-- 轮播图 -->
+        <swiper indicator-dots autoplay interval="2000" class="banner">
+            <swiper-item wx:for="{{bannerList}}" wx:key="index">
+                <image src="{{item.pic}}"></image>
+            </swiper-item>
+        </swiper>
+
+        <!-- 导航图标 -->
+        <scroll-view class="navi-icon" enable-flex scroll-x>
+            <view bindtap="dailysong">
+                <view>
+                    <view class="iconfont icon-rili1 navi-font"></view>
+                </view>
+                <text>每日推荐</text>
+            </view>
+
+            <view>
+                <view>
+                    <view class="iconfont icon-shouyinji-xian navi-font"></view>
+                </view>
+                <text>私人FM</text>
+            </view>
+
+            <view>
+                <view>
+                    <view class="iconfont icon-gedan navi-font"></view>
+                </view>
+                <text>歌单</text>
+            </view>
+
+            <view>
+                <view>
+                    <view class="iconfont icon-paihangbanggequ navi-font"></view>
+                </view>
+                <text>排行榜</text>
+            </view>
+
+            <view>
+                <view>
+                    <view class="iconfont icon-zhibo navi-font"></view>
+                </view>
+                <text>直播</text>
+            </view>
+            <view>
+                <view>
+                    <view class="iconfont icon-zhuanjiguangpan navi-font"></view>
+                </view>
+                <text>数字专辑</text>
+            </view>
+            <view>
+                <view>
+                    <view class="iconfont icon-shoucang navi-font"></view>
+                </view>
+                <text>歌房</text>
+            </view>
+            <view>
+                <view>
+                    <view class="iconfont icon-shoubing navi-font"></view>
+                </view>
+                <text>游戏专区</text>
+            </view>
+        </scroll-view>
+
+        <view class="line"></view>
+        
+        <NavHeader title="推荐歌单" btnname="更多"></NavHeader>
+
+
+        <scroll-view class="navi-music" enable-flex scroll-x>
+            <view wx:for="{{recoSongs}}" wx:key="index">
+                <image src="{{item.picUrl}}"></image>
+                <text>{{item.name}}</text>
+            </view>
+        </scroll-view>
+    </view>
+    
+
+    <view class="view-item">
+        <NavHeader title="他们把故事唱成了歌" btnname="播放"  refresh="true"></NavHeader>
+        <scroll-view class="navi-type-ranking" enable-flex scroll-x>
+            <view class="ranking-item">
+                <view>
+                    <image src="http://p2.music.126.net/DrRIg6CrgDfVLEph9SNh7w==/18696095720518497.jpg"></image>
+                    <view>
+                        <text>再回首</text>
+                        <text>-李宗盛</text>
+                        <text>乘风破浪归来仍是少年</text>
+                        <text class="iconfont icon-bofangqi-bofangxiaodianshi ranking-play"></text>
+                    </view>
+                </view>
+                <view>
+                    <image src="http://p2.music.126.net/DrRIg6CrgDfVLEph9SNh7w==/18696095720518497.jpg"></image>
+                </view>
+                <view>
+                    <image src="http://p2.music.126.net/DrRIg6CrgDfVLEph9SNh7w==/18696095720518497.jpg"></image>
+                </view>
+            </view>
+
+            <view class="ranking-item">
+                <view>
+                    <image src="http://p2.music.126.net/DrRIg6CrgDfVLEph9SNh7w==/18696095720518497.jpg"></image>
+                </view>
+                <view>
+                    <image src="http://p2.music.126.net/DrRIg6CrgDfVLEph9SNh7w==/18696095720518497.jpg"></image>
+                </view>
+                <view>
+                    <image src="http://p2.music.126.net/DrRIg6CrgDfVLEph9SNh7w==/18696095720518497.jpg"></image>
+                </view>
+            </view>
+        </scroll-view>
+
+
+    </view>
+
+
+    <view class="view-item">
+        <NavHeader title="精选音乐视频" btnname="换一批"></NavHeader>
+
+    </view>
+
+    <view class="view-item">
+        <NavHeader title="你的雷达歌单" btnname="更多"></NavHeader>
+
+    </view>
+</view>

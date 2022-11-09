@@ -1,0 +1,19 @@
+<!-- 每条信息 -->
+<view class="message-item">
+    <!-- 左边的头部 -->
+    <view class="item-head">
+        <image src="{{avatarUrl}}"></image>
+    </view>
+    <!-- 右边内容 -->
+    <view class="item-con">
+        <!-- 右边内容又分为 左右结构 -->
+        <view class="item-con-title">
+            <text>{{nickname}}</text>
+            <text>{{lastMsg}}</text>
+        </view>
+        <view class="item-con-time">
+            <view>{{msgTime}}</view>
+            <view wx:if="{{newMsgCount != 0}}">{{newMsgCount}}</view>
+        </view>
+    </view>
+</view>

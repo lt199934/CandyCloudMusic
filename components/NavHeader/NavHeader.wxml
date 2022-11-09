@@ -1,0 +1,10 @@
+<view class="navi-item">
+        <view>
+                <text class="iconfont icon-shuaxin"  wx:if="{{refresh}}"></text>
+                {{title}}
+        </view>
+        <view>
+            {{btnname}}
+            <text class="iconfont icon-youjiantou more-yjt"></text>
+        </view>
+</view>

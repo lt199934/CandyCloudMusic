@@ -1,0 +1,72 @@
+.message-item{
+    width: 90%;
+    height: 150rpx;
+    padding: 0 5%;
+}
+/* 左边的头像 */
+.item-head{
+    width: 20%;
+    height: 150rpx;
+    float: left;
+    text-align: center;
+}
+/* 找到头像下面的图片 */
+.item-head image{
+    width: 110rpx;
+    height: 110rpx;
+    margin-top: 20rpx;
+    border-radius: 50%;
+}
+.item-con{
+    width: 80%;
+    height: 150rpx;
+    float: left;
+    border-bottom: 1rpx #cccccc solid;
+}
+.item-con-title{
+    width: 80%;
+    height: 150rpx;
+    float: left;
+}
+.item-con-title text:nth-child(1){
+    display: block;
+    margin-top: 30rpx;
+    font-size: 35rpx;
+}
+.item-con-title text:nth-child(2){
+    display: block;
+    color: #b0b0b0;
+    font-size: 25rpx;
+    margin-top: 10rpx;
+    /* 多行文本溢出 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+
+.item-con-time{
+    width: 20%;
+    height: 150rpx;
+    float: left;
+}
+.item-con-time view:nth-child(1){
+    width: 100%;
+    height: 50%;
+    font-size: 23rpx;
+    line-height: 100rpx;
+    color: #b0b0b0;
+}
+.item-con-time view:nth-child(2){
+    width: 40rpx;
+    height: 40rpx;
+    text-align: center;
+    line-height: 40rpx;
+    font-size: 27rpx;
+    color: #ffffff;
+    float: right;
+    background-color: #ff3a39;
+    border-radius: 50%;
+}

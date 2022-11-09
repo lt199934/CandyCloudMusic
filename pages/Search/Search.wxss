@@ -1,0 +1,129 @@
+/* pages/Search/Search.wxss */
+button{
+        width: 10% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        padding-left: 0rpx !important;
+        padding-right: 0rpx !important;
+        background-color: transparent !important;
+}
+page{
+        background-color: #ecedef;
+}
+.search-top{
+        width: 100%;
+        height: 90rpx;
+}
+.search-top input{
+        width: 90%;
+        height: 80rpx;
+        margin-top: 5rpx;
+        margin-left: 5%;
+        border-bottom: 1rpx #cccccc solid;
+}
+/* 主体页面 */
+.serarch-main{
+        width: 100%;
+        height: 100%;
+
+}
+/* 搜索结果 */
+.search-result{
+        width: 100%;
+        height: auto;
+}
+/* 搜索推荐 */
+.search-reconm{
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+}
+
+.search-item{
+        width: 100%;
+        height: 100rpx;
+        
+}
+.item-icon{
+        width: 15%;
+        float: left;
+        line-height: 100rpx;
+        text-align: center;
+}
+.item-content{
+        width: 85%;
+        float: left;
+        line-height: 100rpx;
+        border-bottom: 1rpx #e9e8e8 solid;
+}
+
+.result-item{
+        width: 90%;
+        margin: 15rpx auto;
+}
+.result-head{
+        width: 100%;
+        height: 70rpx;
+}
+.result-img-head{
+        width: 10%;
+        height: 70rpx;
+        float: left;
+        text-align: center;
+        line-height: 70rpx;
+        font-size: 70rpx;
+}
+.result-nickname{
+        width: 77%;
+        height: 70rpx;
+        float: left;
+        line-height: 70rpx;
+        margin-left: 3%;
+}
+.result-img-zhuanfa{
+        width: 10% !important;
+        height: 70rpx;
+        float: left;
+        text-align: center;
+        line-height: 70rpx;
+        font-size: 40rpx;
+}
+.result-title{
+        margin: 20rpx 0;
+         /* 多行文本溢出 */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+}
+.result-img-con{
+        width: 100%;
+        border-radius:20rpx;
+}
+
+.result-mv-number{
+        width: 170rpx;
+        border: 1rpx #cccccc solid;
+        height: 50rpx;
+        border-radius: 30rpx;
+        position: relative;
+        bottom: 77rpx;
+        left: 10rpx;
+}
+.result-mv-number view:nth-child(1){
+        float: left;
+        font-size: 30rpx;
+        height: 50rpx;
+        line-height: 50rpx;
+        margin-left: 20rpx;
+        color: #ffffff;
+}
+.result-mv-number view:nth-child(2){
+        float: left;
+        font-size: 27rpx;
+        height: 50rpx;
+        line-height: 50rpx;
+        margin-left: 10rpx;
+        color: #ffffff;
+}

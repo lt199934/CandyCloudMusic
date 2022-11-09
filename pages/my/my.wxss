@@ -1,0 +1,77 @@
+page{
+        background-color: #f5f5f5;
+}
+.top-title{
+        width: 100%;
+        height: 70rpx;
+}
+.top-title-item{
+        float: left;
+        font-size: 50rpx;
+        margin-left: 30rpx;
+        line-height: 70rpx;
+}
+.top-title-search{
+        float: right;
+        font-size: 50rpx;
+        margin-right: 30rpx;
+        line-height: 70rpx;
+}
+/* user-head start */
+.user-head{
+        width: 100%;
+        height: 200rpx;
+        overflow: hidden;
+}
+.user-head view{
+        float: left;
+}
+.user-head-img{
+        font-size: 100rpx;
+        height: 100rpx;
+        margin-top: 50rpx;
+        margin-left: 60rpx;
+        border-radius: 50%;
+        background-color: #f7f1f1;
+        color: #f7dbd8;
+        border:5rpx #ffffff solid;
+}
+.user-head-name view{
+        line-height: 200rpx;
+        font-size: 40rpx;
+}
+.user-head-name view:nth-child(1){
+        margin-left: 30rpx;
+}
+.user-head-image{
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+    margin-left: 60rpx;
+    margin-top: 30rpx;
+}
+/* 图标导航区 */
+.icon-nav{
+        width: 90%;
+        height: 400rpx;
+        margin: 0 auto;
+        border-radius: 30rpx 30rpx 0 0;
+        background-color: #ffffff;
+}
+.icon-nav-item{
+        width: 20%;
+        margin-left: 4%;
+        height: 150rpx;
+        float: left;
+        margin-top: 40rpx;
+        text-align: center;
+}
+.icon-nav-item view:nth-child(1){
+        font-size: 70rpx;
+        color: #fe3a3b;
+        margin-top: 10rpx;
+}
+.icon-nav-item view:nth-child(2){
+        font-size: 30rpx;
+        margin-top: 10rpx;
+}

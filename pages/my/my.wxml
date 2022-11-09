@@ -1,0 +1,55 @@
+<!-- 顶部 -->
+<view class="top-title">
+        <view class="top-title-item iconfont icon-gengduocaidan" bindtap="message"></view>
+        <view class="top-title-search iconfont icon-sousuo"></view>
+</view>
+<!-- 用户头像 -->
+<view class="user-head" bindtap="loginPage">
+        <view wx:if="{{userHeadUrl}}">
+                <image src="{{userHeadUrl}}" class="user-head-image"></image>
+        </view>
+        <view class="user-head-img iconfont icon-yonghu-yuan" wx:else></view>
+        
+        <view class="user-head-name">
+                <!-- 如果名字不为空显示  否则显示立即登录 -->
+                <view wx:if="{{userName}}">{{userName}}</view>
+                <view wx:else>立即登录</view>
+                <!-- 如果名字为空 -->
+                <view wx:if="{{!userName}}" class="iconfont icon-youjiantou"></view>
+        </view>
+</view>
+<!-- 图标导航 -->
+<view class="icon-nav">
+        <view class="icon-nav-item" bindtap="recentlyPlay">
+                <view class="iconfont icon-24gf-playCircle"></view>
+                <view>最近播放</view>
+        </view>
+        <view class="icon-nav-item">
+                <view class="iconfont icon-yinlewenjianjia"></view>
+                <view>本地/下载</view>
+        </view>
+        <view class="icon-nav-item">
+                <view class="iconfont icon-shangchuanyunpan"></view>
+                <view>云盘</view>
+        </view>
+        <view class="icon-nav-item">
+                <view class="iconfont icon-gaiicon-"></view>
+                <view>已购</view>
+        </view>
+        <view class="icon-nav-item">
+                <view class="iconfont icon-31haoyou"></view>
+                <view>我的好友</view>
+        </view>
+        <view class="icon-nav-item">
+                <view class="iconfont icon-shoucang1"></view>
+                <view>收藏和赞</view>
+        </view>
+        <view class="icon-nav-item">
+                <view class="iconfont icon-24gf-playCircle"></view>
+                <view>我的播客</view>
+        </view>
+        <view class="icon-nav-item">
+                <view class="iconfont icon-guanzi-"></view>
+                <view>音乐罐子</view>
+        </view>
+</view>

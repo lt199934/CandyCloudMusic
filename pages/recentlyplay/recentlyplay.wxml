@@ -1,0 +1,15 @@
+<!-- 最近播放列表 -->
+<view class="recently-play">
+        <view class="recently-item" wx:for="{{playList.allData}}" wx:key="index">
+                <view class="item-title">
+                        {{item.song.name}}
+                </view>
+                <view class="subhead">
+                        <view class="sq">SQ</view>
+                        <view class="sub-name">{{item.song.ar[0].name}}</view>
+                </view>
+
+                <view class="icon-more iconfont icon-diandiandianshu"></view>
+                <view class="icon-play iconfont icon-24gf-playCircle"></view>
+        </view>
+</view>

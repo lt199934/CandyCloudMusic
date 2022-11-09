@@ -1,0 +1,45 @@
+<!--pages/Search/Search.wxml-->
+<!-- 顶部搜索 -->
+<!-- focus='{true}' 页面加载自动获取焦点 -->
+<view class="search-top">
+        <input  name="search" type='text' confirm-type="search" bindconfirm="bindconfirm"  focus='{true}'  bindinput='searchInput' placeholder="飞机场 - 徐良"></input>
+</view>
+<view class="search-reconm"  wx:if="{{searchData && searchOK=='none'}}">
+
+        <!-- 知道查询出来了哪几种类型 -->
+        <!-- 4次 -->
+        <view  wx:for="{{searchSuggest.result.order}}" wx:key="index">
+                <view class="search-item" wx:for="{{searchSuggest.result[item]}}" wx:key="tiem2" wx:for-item="tiem2">
+                        <view class="item-icon iconfont icon-sousuo"></view>
+                        <view class="item-content">{{tiem2.name}}</view>
+                </view>
+        </view>
+        <!-- <view class="search-item" wx:for="{{searchSuggest.result.allMatch}}" wx:key="index">
+                <view class="item-icon iconfont icon-sousuo"></view>
+                <view class="item-content">{{item.keyword}}</view>
+        </view> -->
+</view>
+<view class="serarch-main" wx:if="{{!searchData}}">
+        主体页面
+</view>
+<view class="search-result" style="display: {{searchOK}};">
+        <!-- searchResult -->
+        <view class="result-item" wx:for="{{searchResult.result.videos}}" wx:key="index">
+                <view class="result-head">
+                        <view class="result-img-head iconfont icon-yonghu-yuan"></view>
+                        <view class="result-nickname">{{item.creator[0].userName}}</view>
+                        <button open-type="share">
+                                <view class="result-img-zhuanfa iconfont icon-31zhuanfa"></view>
+                        </button> 
+                </view>
+                <view class="result-title">{{item.title}}</view>
+                <!-- 如果是第一个就显示视频 -->
+                <video  wx:if="{{index == 0}}" class="result-img-con" src="{{firstVideoUrl}}" show-mute-btn></video>
+                <image  wx:else class="result-img-con"  src="{{item.coverUrl}}"></image>  
+                <!-- 如果是第0个就不显示播放数量 -->
+                <view  wx:if="{{index != 0}}" class="result-mv-number">
+                        <view class="iconfont icon-24gl-play"></view>
+                        <view>{{item.playTime}}</view>
+                </view>
+        </view>
+</view>

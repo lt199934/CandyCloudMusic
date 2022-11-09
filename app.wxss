@@ -1,0 +1,6 @@
+/**app.wxss**/
+@import "/static/iconfont/iconfont.wxss";
+/* 页面 */
+page{
+  height: 100%;
+}

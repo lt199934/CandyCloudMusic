@@ -1,0 +1,14 @@
+<view class="title-item">
+    私信对话
+</view>
+<!-- 所有信息 -->
+<view class="message-all">
+    <!-- 引入message组件 -->
+    <Message wx:for="{{messageList}}" wx:key="index"
+    avatarUrl="{{item.fromUser.avatarUrl}}"
+    nickname="{{item.fromUser.nickname}}"
+    lastMsg="{{item.lastMsgJSON.msg}}"
+    newMsgCount="{{item.newMsgCount}}"
+    msgTime="{{item.msgTime}}"
+    ></Message>
+</view>

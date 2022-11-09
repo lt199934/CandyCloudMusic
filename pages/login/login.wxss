@@ -1,0 +1,33 @@
+.login-box{
+        width: 85%;
+        height: 500rpx;
+        margin: 0 auto;
+        margin-top: 200rpx;
+        /* border: 3px red solid; */
+}
+input{
+        width: 100%;
+        height: 70rpx;
+        margin-top: 20rpx;
+        border-bottom: 1rpx #ccc solid;
+}
+input:nth-child(2){
+        margin-top: 60rpx;
+}
+
+button{
+        margin-top: 60rpx;
+        width: 100% !important;
+        height: 80rpx;
+        background-color: #fe3a3b;
+        color: #fff;
+        font-size: 30rpx !important;
+        border-radius: 30rpx !important;
+        line-height: 50rpx !important;
+}
+
+.reset-pass{
+        width: 100%;
+        text-align: center;
+        margin-top: 60rpx;
+}

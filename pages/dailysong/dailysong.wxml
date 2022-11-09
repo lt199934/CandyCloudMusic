@@ -1,0 +1,26 @@
+<!--pages/dailysong/dailysong.wxml-->
+
+<view class="top-bg" style="background-image: url('{{topbg}}')">
+    <view class="top-bg-date">
+        <view>{{day}}</view>
+        <view>/{{mouth}}</view>
+    </view>
+</view>
+<!-- 推荐歌曲内容 -->
+<!-- 
+    bindtouchstart 手指按下
+    bindtouchmove 手指滑动
+    bindtouchend 松开手指 
+-->
+<view class="daily-song-con" 
+bindtouchstart="handlerStart"
+bindtouchmove="handlerMove"
+bindtouchend="handlerEnd" 
+style="transform: {{transform}}; transition:{{coverTransition}}">
+
+    <SongItem wx:for="{{songsList}}" wx:key="index" 
+    name="{{item.name}}" 
+    msg="{{item.artists[0].name}} {{item.al.name}}"
+    musicid="{{item.id}}"
+    musicImg="{{item.al.picUrl}}"></SongItem>
+</view>

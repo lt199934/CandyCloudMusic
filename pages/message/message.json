@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "Message":"/components/Message/Message"
+  },
+  "navigationBarTitleText": "私信"
+}

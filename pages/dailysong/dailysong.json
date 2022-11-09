@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+      "SongItem":"/components/SongItem/SongItem"
+  },
+  "navigationBarTitleText": "每日推荐",
+  "navigationBarBackgroundColor": "#c4c4c2"
+}

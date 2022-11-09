@@ -1,0 +1,17 @@
+/* pages/message/message.wxss */
+page{
+    background-color: #ffffff;
+}
+.title-item{
+    width: 90%;
+    height: 60rpx;
+    background-color: #f7f7f7;
+    line-height: 60rpx;
+    padding: 0 5%;
+    font-size: 25rpx;
+    color: #686868;
+}
+.message-all{
+    width: 100%;
+    height: auto;
+}

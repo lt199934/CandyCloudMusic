@@ -1,0 +1,63 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/login/login",
+        "pages/logs/logs",
+        "pages/podcast/podcast",
+        "pages/my/my",
+        "pages/attention/attention",
+        "pages/yuncun/yuncun",
+        "pages/recentlyplay/recentlyplay",
+        "pages/Search/Search",
+        "pages/message/message",
+        "pages/dailysong/dailysong",
+        "pages/playmusic/playmusic"
+    ],
+    "entryPagePath": "pages/index/index",
+    "tabBar": {
+        "color": "#7A7E83",
+        "selectedColor": "#fe3a3b",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "/static/images/iconImg/home_before.png",
+                "selectedIconPath": "/static/images/iconImg/home_after.png",
+                "text": "发现"
+            },
+            {
+                "pagePath": "pages/podcast/podcast",
+                "iconPath": "/static/images/iconImg/signal_before.png",
+                "selectedIconPath": "/static/images/iconImg/signal_after.png",
+                "text": "播客"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "iconPath": "/static/images/iconImg/my_before.png",
+                "selectedIconPath": "/static/images/iconImg/my_after.png",
+                "text": "我的"
+            },
+            {
+                "pagePath": "pages/attention/attention",
+                "iconPath": "/static/images/iconImg/follow_before.png",
+                "selectedIconPath": "/static/images/iconImg/follow_after.png",
+                "text": "关注"
+            },
+            {
+                "pagePath": "pages/yuncun/yuncun",
+                "iconPath": "/static/images/iconImg/yunchun_before.png",
+                "selectedIconPath": "/static/images/iconImg/yunchun_after.png",
+                "text": "云村"
+            }
+        ]
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#c20c0c",
+        "navigationBarTitleText": "糖果云音乐",
+        "navigationBarTextStyle": "white"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

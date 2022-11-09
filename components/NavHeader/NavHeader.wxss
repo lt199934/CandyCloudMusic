@@ -1,0 +1,25 @@
+@import "/static/iconfont/iconfont.wxss";
+.navi-item{
+        height: 55rpx;
+}
+.navi-item view:nth-child(1){
+        float: left;
+        margin-left: 30rpx;
+        font-size: 35rpx;
+        font-weight: bolder;
+}
+.navi-item view:nth-child(2){
+        width: auto;
+        height: 40rpx;
+        border-radius: 30rpx;
+        line-height: 40rpx;
+        float: right;
+        font-size: 25rpx;
+        padding-left: 15rpx;
+        margin-right: 30rpx;
+        border: 1rpx solid #cccccc;
+}
+/* 更多的右箭头 */
+.more-yjt{
+        float: right;
+}

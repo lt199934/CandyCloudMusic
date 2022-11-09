@@ -1,0 +1,84 @@
+<!-- 最外层的背景图 -->
+<view class="bg-img" style="background-image:url('{{musicImg}}')"></view>
+<!-- 背景图上面应该还有一个蒙版层 -->
+<view class="bg-img-color"></view>
+
+<view class="head-title">
+    <view class="iconfont icon-xiajiantou"></view>
+    <view class="head-title-con">
+        <view class="head-title-main">{{title}}</view>
+        <view class="head-title-sub">{{subheading}}></view>
+    </view>
+    <view>
+        <image src="https://p4.music.126.net/WG9DhP4Jhnknk-5a8CDcuA==/109951166606329903.jpg"></image>
+    </view>
+    <view class="iconfont icon-fenxiang"></view>
+</view>
+
+<view class="needle">
+    <image src="/static/images/song/needle.png" style="transform: rotate({{rotate}}deg);"></image>
+</view>
+<!-- 旋转图片 -->
+<view class="record">
+    <image src="{{musicImg}}" class="music-img-bg" style="animation: {{animation}}"></image>
+    <image src="/static/images/song/disc.png"  style="animation: {{animation}}"></image>
+</view>
+
+<!-- 调音台 -->
+<view class="mixer">
+    <!-- 图标区域 -->
+    <view class="icon-img icon-img-top">
+        <view class="icon-img-first">
+            <view class="iconfont icon-aixin"></view>
+        </view>
+        <view class="icon-img-item">
+            <view class="iconfont icon-xiazai"></view>
+        </view>
+        <view class="icon-img-item">
+            <view class="iconfont icon-gechang"></view>
+        </view>
+        <view class="icon-img-item">
+            <view class="iconfont icon-pinglun"></view>
+        </view>
+        <view class="icon-img-last">
+            <view class="iconfont icon-diandiandianshu"></view>
+        </view>
+    </view>
+    <!-- 进度条 -->
+    <view class="progress-bar"
+            bindtouchstart="handlerStart"
+            bindtouchmove="handlerMove"
+            bindtouchend="handlerEnd">
+        <view class="start-time">{{startTime}}</view>
+        <!-- 背景线 -->
+        <view class="progress-line" id="line">
+            <!-- 进度线 -->
+            <view style="width:{{progress}}" class="progress-line-progress"></view>
+            <!-- 圆点 -->
+            <view style="left: {{progress}}" class="progress-dot"></view>
+        </view>
+        <view class="stop-time">{{stopTime}}</view>
+    </view>
+
+    <view class="icon-img2">
+        <view class="icon-img-first2">
+            <view class="iconfont icon-liebiaoxunhuan"></view>
+        </view>
+        <view class="icon-img-item2">
+            <view class="iconfont icon-shangyiqu101"></view>
+        </view>
+        <view class="icon-img-item2"  bindtap="musicControl">
+            <view class="item-quan">
+                <view wx:if="{{isPlay}}" class="iconfont icon-zanting"></view>
+                <view wx:else class="iconfont icon-shipinbofangshibofang"></view>
+            </view>
+        </view>
+        <view class="icon-img-item2">
+            <view class="iconfont icon-xiayiqu101"></view>
+        </view>
+        <view class="icon-img-last2">
+            <view class="iconfont icon-24gl-playlist"></view>
+        </view>
+    </view>
+
+</view> 
